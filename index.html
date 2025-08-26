@@ -73,8 +73,13 @@
       line-height: 1.7;
     }
     #home {
-      background: url("banner.png") no-repeat center center/cover;
-      position: relative;
+  height: 100vh;   /* full screen ki height lega */
+  width: 100%;
+  background: url('banner.png') no-repeat center center;
+  background-size: contain;  /* pura image dikhayega */
+  background-color: #000;    /* baki khali jagah fill karne ke liye */
+}
+
     }
     #home::after {
       content: "";
